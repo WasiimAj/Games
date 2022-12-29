@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+.signup-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.signup-left-side {
+    width: 642;
+    background-image: url('../Images//palstaion.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.overlay {
+    width: 642px;
+    height: 100%;
+    background: #1565D8;
+    opacity: 0.9;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.light-logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+.light-logo-section > p {
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.pointes-image {
+    width: 50%;
+    margin: 10% auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.color1 {
+    color: #00DAF7;
+}
+
+.color2 {
+    color: #FFFFFF !important;
+}
+
+.footer {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.signup-right-side {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.back {
+    margin: 30px auto 30px auto;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.back > p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #8692A6;
+    padding: 0px 8px;
+    cursor: pointer;
+}
+
+.signup-discription-box {
+    width: 65%;
+    margin: 0% auto;
+}
+
+.signup-discription-box > p {
+    width: 411px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #8692A6;
+}
+
+.signup-form {
+    margin: auto !important;
+    width: 65% !important;
+}
+
+.signup-form > input {
+    height: 50px;
+}
+
+.checkbox-div {
+    width: 100%;
+    margin: 3% auto 0% auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.checkbox-div > label {
+    padding: 0px 10px;
+}
+
+.chekbox {
+    width: 18px;
+    height: 18px;
+    margin: 0 1%;
+}
+
+.signup-form > button {
+    margin: 2% 0;
+}
+
+.login-btn {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000 ;
+}
+
+.password-power {
+    margin: 1% 0;
+    background: #FFC107;
+    border-radius: 4px;
+    width: 280px;
+    height: 4px;
+}
+
+.error-msg {
+    color: rgb(194, 33, 33);
+    text-align: left;
+    padding: 15px 5px;
+}
+
+.error-img {
+    margin: 10px;
+    width: 70%;
+    border-radius: 8px;
+}
