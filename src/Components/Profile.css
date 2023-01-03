@@ -1,0 +1,347 @@
+/* Custom Compnents */
+.title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 43px;
+    color: #000000;
+    padding: 10px;
+}
+
+
+
+.profile-div {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(112.14deg, #F8F8F8 1.17%, #FFFFFF 96.84%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.side-bar {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.setting-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setting-div > a {
+    margin: 50% 0;
+}
+
+.setting-icons {
+    width: 35px;
+    height: 35px;
+}
+
+.theem-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #C1C1C1;
+    border-radius: 60px;
+    width: 50px;
+    height: 141px;
+}
+
+.theem-div > img {
+    width: 30px;
+    height: 30px;
+}
+
+.colum-line {
+    width: .5%;
+    background: #FFFFFF;
+    box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 38px;
+    margin: auto 0;
+    height: 90%;
+}
+
+.games-box {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-header {
+    margin: auto;
+    width: 95%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-box > img {
+    width: 65px;
+    height: 65px;
+    border: 2.5px solid #000000;
+    border-radius: 20px;
+}
+
+.user-box > p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: right;
+    color: #000000;
+    padding: 5px 15px;
+}
+
+.games-slider {
+    width: 1400px;
+    height: 300px;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap; 
+}
+
+.games-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.game-card {
+    display: inline-block;
+    width: 480px;
+    height: 300px;
+    margin: 0 .5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60px;
+    background-image: url('../Images//gameofthrouns-background.png');
+    position: relative;
+}
+
+.avatar-img {
+    background-image: url('../Images/game-of-trhons.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 65%;
+    height: 250px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    z-index: 10;
+    border-radius: 60px;
+}
+
+.a1 {
+    background-image: url('../Images/Rectangle\ 3.png');
+}
+
+.a2 {
+    background-image: url('../Images/Rectangle\ 4.png');
+}
+
+.avatar1 {
+    background-image: url('../Images/Suicidesquadteaser\ 1.png');
+}
+
+.avatar2 {
+    background-image: url('../Images/HD-wallpaper-miles-morales-ps5-spiderman-watch-removebg-preview\ 1.png');
+}
+
+.spiderman-logo {
+    height: 200px !important;
+}
+
+
+.avatar-img:hover {
+    width: 60%;
+    height: 310px;
+    left: 0%;
+    bottom: 0%;
+}
+
+.game-logo-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.game-logo-and-text > img {
+    width: 50%;
+    height: 168px;
+    filter: drop-shadow(0px 0px 162.086px #FFFFFF) drop-shadow(0px 0px 92.6206px #FFFFFF) drop-shadow(0px 0px 54.0287px #FFFFFF) drop-shadow(0px 0px 27.0143px #FFFFFF) drop-shadow(0px 0px 7.71838px #FFFFFF) drop-shadow(0px 0px 3.85919px #FFFFFF);
+}
+
+.game-logo-and-text > p {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: right;
+    color: #FFFFFF;
+    padding: 5px;
+    z-index: 11;
+}
+
+.custom {
+    width: 180px !important;
+    height: 180px !important;
+    filter: none !important;
+    visibility: hidden;
+}
+
+.last-games {
+    width: 96%;
+    height: 300px;
+    margin: .5% auto;
+    display: flex;
+}
+
+.last-games > div {
+    width: calc(100%/3);
+    height: 100%;
+    margin: 0 .5%;
+}
+
+.last-played {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.last-played > div {
+    width: 350px;
+    height: 50px;
+    margin: 10px 0px 0px 10px;
+    background: #FBFBFB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.last-played-img {
+    width: 55px;
+    height: 55px;
+    border-radius:50% ;
+    filter: drop-shadow(0px 23px 9px rgba(0, 0, 0, 0.03)) drop-shadow(0px 13px 8px rgba(0, 0, 0, 0.11)) drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.19)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.22)) drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.22));
+}
+
+.last-played-p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000000;
+    padding: 5px 15px;
+}
+
+.last-trophy {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background: url('../Images/Rectangle\ 11.png');
+    background-size: cover;
+    border-radius: 45px 150px 45px 45px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0) 26.99%, rgba(0, 0, 0, 0) 68.41%, rgba(0, 0, 0, 0.42) 100%),
+}
+
+.cup {
+    width: 110px;
+    height: 108px;
+    background: #32FB00;
+    border-radius: 50%;
+    box-shadow: 0px 0px 567px #32FB00, 0px 0px 324px #32FB00, 0px 0px 189px #32FB00, 0px 0px 94.5px #32FB00, 0px 0px 27px #32FB00, 0px 0px 13.5px #32FB00;
+}
+
+.last-trophy > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.last-trophy-header {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 31px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.last-trophy-p {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 3px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.last-trophy-details {
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    opacity: 0.7;
+    backdrop-filter: blur(5px);
+    border-radius: 0px 0px 45px 45px;
+    position:absolute;
+    bottom: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    padding: 15px;
+}
+
+.last-trophy-details > p {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.last-trophy-details > span {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.frindes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frindes-img {
+    width: 45%;
+}

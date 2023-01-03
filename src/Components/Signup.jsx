@@ -6,6 +6,7 @@ import element from '../Images/staire.png';
 import vector from '../Images/Vector.png';
 import back from '../Images/back.png';
 import google from '../Images/google.png';
+import { Link } from 'react-router-dom';
 
 export default class Signup extends Component {
 
@@ -98,7 +99,6 @@ export default class Signup extends Component {
                             {this.state.errorMsg && this.state.email.length <= 0 ?  
                                 <>
                                     <p className='error-msg'>Please Enter your Email !</p> 
-                                    <img className='error-img' src='https://img.youm7.com/ArticleImgs/2018/6/26/52980-233711598.jpg'/>
                                 </>
                             : ""}
                             <label htmlFor="password">Create password*</label>
@@ -113,7 +113,6 @@ export default class Signup extends Component {
                             {this.state.errorMsg && this.state.password <= 0 ? 
                                 <>
                                     <p className='error-msg'> Please Enter Your Password !</p> 
-                                    <img className='error-img' src="https://mbaka.agenfilm.productions/imgOIP.cKwJqDMgsq2r9wzMYMi-_QHaEK" alt="bo7a" />
                                 </>
                             : ""}
 
@@ -133,7 +132,6 @@ export default class Signup extends Component {
                             {this.state.errorMsg ? 
                                 <>
                                     <p className='error-msg'> Please Confirm Your Password ! </p>
-                                    <img className='error-img' src="https://i.ytimg.com/vi/gk6nJqC8QSU/mqdefault.jpg" alt="bo7aa" />
                                 </>
                                 : ""
                             }
@@ -150,12 +148,12 @@ export default class Signup extends Component {
                             </div>
 
                             <button>Register Account</button>
-                            <button className='login-btn'>
+                            <Link to="/login" className='login-btn'>
                                 <img src={google} alt="" />
                                 login
                                 <div></div>
-                            </button>
-                    </form>
+                            </Link>
+                        </form>
 
                 </div>
                 

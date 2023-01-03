@@ -6,6 +6,7 @@ import google from '../Images/google.png';
 import twitter from '../Images/twitter.png';
 import linkedin from '../Images/linkendin.png';
 import githup from '../Images/githup.png';
+import { Link, Navigate, redirect } from 'react-router-dom';
 
 export default class Login extends Component {
 
@@ -13,10 +14,14 @@ export default class Login extends Component {
     state = {
         email: '',
         password: '',
+        errorMsg: false
     }
 
     handeleSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault();
+        if (this.state.email.length || this.state.password.length == 0) {
+            this.setState({errorMsg: true})      
+        }
         console.log(this.state)
     }
 
@@ -24,7 +29,10 @@ export default class Login extends Component {
         const {value, id} = e.target
         console.log(value, id)
         this.setState({ [id]:value })
+    }
 
+    test = () => {
+        redirect('/profile')
     }
 
     render() {
@@ -88,6 +96,12 @@ export default class Login extends Component {
                             placeholder='Write your email'
                             onChange={this.handelChange}
                         />
+                        {/* ERROR MESSAGE */}
+                        {this.state.errorMsg && this.state.email.length <= 0 ?  
+                                <>
+                                    <p className='error-msg'>Please Enter your Email !</p> 
+                                </>
+                            : ""}
                         <label htmlFor="password">Enter Your password</label>
                         <input 
                             type="password" 
@@ -95,11 +109,22 @@ export default class Login extends Component {
                             placeholder='•••••••••'
                             onChange={this.handelChange}
                         />
-                        <button>Login</button>
+                         {/* ERROR MESSAGE */}
+                        {this.state.errorMsg && this.state.password <= 0 ? 
+                                <>
+                                    <p className='error-msg'> Please Enter Your Password !</p> 
+                                </>
+                            : ""}
+                        { this.state.email && this.state.password !== 0 ? 
+                            <Link className='login-link' to="/profile">
+                                Login
+                            </Link>
+                            : <button type='submit'>Login</button>
+                        }
                     </form>
 
                     <div className="haveaccount">
-                        <span>Don’t have an account? <a href='/register'> Register </a></span>
+                        <span>Don’t have an account? <a href='/signup'> Register </a></span>
                     </div>
                 </div>
             </div>

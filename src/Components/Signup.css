@@ -166,6 +166,9 @@
     align-items: center;
     text-align: center;
     color: #000000 ;
+    text-decoration: none;
+    width: 426px;
+    height: 64px;
 }
 
 .password-power {
@@ -180,10 +183,4 @@
     color: rgb(194, 33, 33);
     text-align: left;
     padding: 15px 5px;
-}
-
-.error-img {
-    margin: 10px;
-    width: 70%;
-    border-radius: 8px;
 }

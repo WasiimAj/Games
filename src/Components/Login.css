@@ -215,6 +215,28 @@ form > button {
     cursor: pointer;
 }
 
+.login-link {
+    background: none;
+    outline: none;
+    border: none;
+    background: #1565D8;
+    border-radius: 6px;
+    width: 426px;
+    height: 64px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 52px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .haveaccount > span {
     font-style: normal;
     font-weight: 500;
